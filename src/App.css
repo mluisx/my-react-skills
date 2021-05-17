@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+.imgMrx {
+  /*border: solid 10px transparent;*/
+  border: 1px solid #fff;
+  height: 50px; width: 50px; color:red;
+  /*transition: opacity 1s ease-out;
+  opacity: 0;*/
+}
+.imgMrx:hover {
+  /* border-color: green;*/
+  outline: 2px solid #f66d1f;
+  border: 1px solid #fff;
+}
+
+.imgMrx2:hover + .imgMrx {
+  opacity: 1;
+}
+
+.imgMrx[title]:hover::after {
+  padding: 4px 8px;
+  color: rgba(0,0,0,0.5);
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 2;
+  border-radius: 5px ;
+  background: rgba(0,0,0,0.5);
+}
+
+.box{ 
+	width:20px; 
+	height:20px; 
+} 
+ 
+.red{ 
+	background:#f00; 
+} 
+.green{ 
+	background:#0f0; 
+} 
+.blue{ 
+	background:#00f; 
+}
+
+.featureImage {
+  height: 600px;
+  width: 800px;
+  animation: fade 5s infinite;
+}
+
+.App {
+    width: 90%;
+    margin: auto;
+}
